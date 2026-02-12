@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPulse - Política de Privacidad</title>
+    <style>
+        :root {
+            --primary: #2196F3;
+            --bg: #ffffff;
+            --text: #212121;
+            --border: #e0e0e0;
+            --code-bg: #f5f5f5;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #121212;
+                --text: #e0e0e0;
+                --border: #333333;
+                --code-bg: #1e1e1e;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .language-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .lang-btn {
+            padding: 10px 20px;
+            border: 2px solid var(--primary);
+            background: transparent;
+            color: var(--primary);
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+        
+        .lang-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .lang-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+        
+        .content h2 {
+            color: var(--primary);
+            margin: 30px 0 15px;
+            font-size: 1.8em;
+        }
+        
+        .content h3 {
+            color: var(--primary);
+            margin: 25px 0 10px;
+            font-size: 1.4em;
+        }
+        
+        .content p, .content li {
+            margin: 10px 0;
+        }
+        
+        .content ul {
+            margin-left: 30px;
+        }
+        
+        .highlight {
+            background: var(--code-bg);
+            padding: 15px;
+            border-left: 4px solid var(--primary);
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .emoji {
+            font-style: normal;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px 0;
+            border-top: 2px solid var(--border);
+            color: #757575;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        code {
+            background: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .content h2 {
+                font-size: 1.5em;
+            }
+            
+            .content h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔒 AutoPulse</h1>
+            <p>Política de Privacidad / Privacy Policy</p>
+            
+            <div class="language-selector">
+                <button class="lang-btn active" onclick="showLanguage('es')">🇪🇸 Español</button>
+                <button class="lang-btn" onclick="showLanguage('en')">🇬🇧 English</button>
+            </div>
+        </header>
+        
+        <div id="content-es" class="content">
+            <div class="highlight">
+                <p><strong>Resumen ejecutivo:</strong></p>
+                <p>✅ Almacenamos y encriptamos tus datos de forma segura (Firebase + AES-256)</p>
+                <p>✅ Solo usamos los datos para que el taller funcione correctamente</p>
+                <p>✅ Puedes exportar o eliminar tus datos cuando quieras</p>
+                <p>❌ <strong>NO vendemos</strong> tu información</p>
+                <p>❌ <strong>NO mostramos anuncios</strong></p>
+                <p>❌ <strong>NO compartimos</strong> con terceros (excepto Firebase como infraestructura)</p>
+                <p>❌ <strong>NO hacemos tracking</strong> publicitario</p>
+            </div>
+
+            <p><strong>Última actualización:</strong> 11 de febrero de 2026</p>
+            <p><strong>Versión:</strong> 1.0</p>
+            <p><strong>Contacto:</strong> <a href="mailto:privacy@autopulse.app">privacy@autopulse.app</a></p>
+
+            <h2>📄 Política de Privacidad Completa</h2>
+            <p>Para leer la política completa en español, descarga el archivo:</p>
+            <p>👉 <a href="https://github.com/[TU-USUARIO]/autopulse/blob/main/PRIVACY_POLICY.md" target="_blank">PRIVACY_POLICY.md</a></p>
+            
+            <h2>📋 Secciones Principales</h2>
+            <ul>
+                <li><strong>Introducción</strong> - NO recopilamos datos para venderlos</li>
+                <li><strong>Información Recopilada</strong> - Datos de cuenta, taller y técnicos</li>
+                <li><strong>Uso de la Información</strong> - Solo para operación del servicio</li>
+                <li><strong>Almacenamiento y Seguridad</strong> - Firebase con encriptación AES-256</li>
+                <li><strong>Terceros</strong> - Solo Firebase (Google Cloud Platform)</li>
+                <li><strong>Derechos del Usuario</strong> - Acceso, exportación, eliminación</li>
+                <li><strong>Retención de Datos</strong> - 30 días tras solicitud de eliminación</li>
+                <li><strong>Menores de Edad</strong> - Uso profesional 18+</li>
+                <li><strong>Permisos de Android</strong> - Internet, almacenamiento, cámara, biométrica</li>
+                <li><strong>Cookies</strong> - Solo Firebase Authentication</li>
+                <li><strong>Transferencias Internacionales</strong> - Servidores globales de Firebase</li>
+                <li><strong>Cambios en la Política</strong> - Notificación in-app y por email</li>
+                <li><strong>Cumplimiento Legal</strong> - GDPR, CCPA, LOPD</li>
+                <li><strong>Seguridad del Taller</strong> - Responsabilidad compartida</li>
+                <li><strong>Contacto</strong> - Respuesta en 48-72 horas</li>
+                <li><strong>Compromiso de Transparencia</strong> - Open source en el futuro</li>
+            </ul>
+        </div>
+        
+        <div id="content-en" class="content hidden">
+            <div class="highlight">
+                <p><strong>Executive Summary:</strong></p>
+                <p>✅ We securely store and encrypt your data (Firebase + AES-256)</p>
+                <p>✅ We only use data to make the workshop function properly</p>
+                <p>✅ You can export or delete your data whenever you want</p>
+                <p>❌ We <strong>DO NOT sell</strong> your information</p>
+                <p>❌ We <strong>DO NOT show ads</strong></p>
+                <p>❌ We <strong>DO NOT share</strong> with third parties (except Firebase as infrastructure)</p>
+                <p>❌ We <strong>DO NOT track</strong> for advertising</p>
+            </div>
+
+            <p><strong>Last Updated:</strong> February 11, 2026</p>
+            <p><strong>Version:</strong> 1.0</p>
+            <p><strong>Contact:</strong> <a href="mailto:privacy@autopulse.app">privacy@autopulse.app</a></p>
+
+            <h2>📄 Complete Privacy Policy</h2>
+            <p>To read the complete policy in English, download the file:</p>
+            <p>👉 <a href="https://github.com/[TU-USUARIO]/autopulse/blob/main/PRIVACY_POLICY_EN.md" target="_blank">PRIVACY_POLICY_EN.md</a></p>
+            
+            <h2>📋 Main Sections</h2>
+            <ul>
+                <li><strong>Introduction</strong> - We do NOT collect data to sell it</li>
+                <li><strong>Information Collected</strong> - Account, workshop, and technical data</li>
+                <li><strong>Use of Information</strong> - Only for service operation</li>
+                <li><strong>Storage and Security</strong> - Firebase with AES-256 encryption</li>
+                <li><strong>Third Parties</strong> - Only Firebase (Google Cloud Platform)</li>
+                <li><strong>User Rights</strong> - Access, export, deletion</li>
+                <li><strong>Data Retention</strong> - 30 days after deletion request</li>
+                <li><strong>Minors</strong> - Professional use 18+</li>
+                <li><strong>Android Permissions</strong> - Internet, storage, camera, biometric</li>
+                <li><strong>Cookies</strong> - Only Firebase Authentication</li>
+                <li><strong>International Transfers</strong> - Firebase global servers</li>
+                <li><strong>Policy Changes</strong> - In-app and email notification</li>
+                <li><strong>Legal Compliance</strong> - GDPR, CCPA, local laws</li>
+                <li><strong>Workshop Security</strong> - Shared responsibility</li>
+                <li><strong>Contact</strong> - 48-72 hour response</li>
+                <li><strong>Transparency Commitment</strong> - Open source in the future</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p><strong>AutoPulse</strong> - Gestión Inteligente de Talleres Automotrices</p>
+            <p>© 2026 AutoPulse. Todos los derechos reservados.</p>
+            <p><a href="mailto:privacy@autopulse.app">privacy@autopulse.app</a></p>
+        </footer>
+    </div>
+    
+    <script>
+        function showLanguage(lang) {
+            // Hide all content
+            document.getElementById('content-es').classList.add('hidden');
+            document.getElementById('content-en').classList.add('hidden');
+            
+            // Show selected content
+            document.getElementById('content-' + lang).classList.remove('hidden');
+            
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Update page language
+            document.documentElement.lang = lang;
+        }
+    </script>
+</body>
+</html>
