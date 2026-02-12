@@ -1,0 +1,64 @@
+name: autopulse
+description: Sistema integral de gestión de talleres automotrices para Android
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.14.0
+  firebase_storage: ^11.6.0
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # UI Components
+  flutter_svg: ^2.0.9
+  animations: ^2.0.11
+  
+  # Image & Camera
+  image_picker: ^1.0.7
+  flutter_image_compress: ^2.1.0
+  
+  # Storage & Files
+  path_provider: ^2.1.2
+  path: ^1.9.0
+  shared_preferences: ^2.2.2
+  pdf: ^3.10.7
+  
+  # Permissions & Security
+  permission_handler: ^11.2.0
+  local_auth: ^2.1.8
+  
+  # Internationalization
+  intl: ^0.19.0
+  
+  # Utils
+  uuid: ^4.3.3
+  collection: ^1.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/images/logo.png"
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/images/logo.png"
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
